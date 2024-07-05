@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "timelineEntries": [
+        {
+          "fromMonth": "feb",
+          "fromYear": "2021",
+          "toMonth": "feb",
+          "toYear": "2024",
+          "collegeOrJob": "xyz"
+        }
+      ],
+      "sportEntries": [
+        {
+          "sport": "soccer",
+          "college": "xyz",
+          "level": "jet",
+          "semester": "second",
+          "year": "2014"
+        }
+      ],
+      "presentCollege": "ahmadu bello university",
+      "presentConference": "pharmacognosy",
+      "sportThisSeason": "football",
+      "previousSeasons": "1",
+      "lastName": "Abioye",
+      "firstName": "Victoria",
+      "middleName": "ade",
+      "gender": "female",
+      "studentId": "123456",
+      "todaysDate": "2024-07-05",
+      "address": "Asajon way",
+      "telephone": "07039818694",
+      "dateOfBirth": "1993-01-05",
+      "highSchool": "Lagos",
+      "lastDateAttended": "2006-01-10"
+    }
+  ]
+}
