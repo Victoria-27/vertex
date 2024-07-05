@@ -7,7 +7,7 @@ import { FormData } from "../types";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formSchema } from "../utils/validations";
 
-
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://vertex-baw2.onrender.com";
 const Form: React.FC = () => {
   const {
     register,
@@ -43,7 +43,7 @@ const Form: React.FC = () => {
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const response = await axios.post("/api/formData", data);
+      const response = await axios.post(`${API_URL}/formData`, data);
       if (response.status === 201) {
         alert("Form submitted successfully");
       } else {
