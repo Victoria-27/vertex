@@ -8,12 +8,12 @@ export interface FormData {
   middleName: string;
   gender: string;
   studentId: string;
-  todaysDate: string;
+  todaysDate: Date;
   address: string;
   telephone: string;
-  dateOfBirth: string;
+  dateOfBirth: Date;
   highSchool: string;
-  lastDateAttended: string;
+  lastDateAttended: Date;
   timelineEntries: {
     fromMonth: string;
     fromYear: string;

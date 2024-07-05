@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch db.json --port 3000"
+    "test": "jest",
+    "json-server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
@@ -30,6 +31,7 @@
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.6",
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
