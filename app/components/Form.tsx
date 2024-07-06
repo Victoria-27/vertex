@@ -26,15 +26,15 @@ const Form: React.FC = () => {
     defaultValues: {
       timelineEntries: [
         { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
-        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
-        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
-        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
       ],
       sportEntries: [
         { sport: "", college: "", level: "", semester: "", year: "" },
-        // { sport: "", college: "", level: "", semester: "", year: "" },
-        // { sport: "", college: "", level: "", semester: "", year: "" },
-        // { sport: "", college: "", level: "", semester: "", year: "" },
+        { sport: "", college: "", level: "", semester: "", year: "" },
+        { sport: "", college: "", level: "", semester: "", year: "" },
+        { sport: "", college: "", level: "", semester: "", year: "" },
       ],
     },
   });
