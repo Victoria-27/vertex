@@ -1,33 +1,40 @@
 "use client";
 import React from "react";
-import { useForm, SubmitHandler, useFieldArray, Resolver } from "react-hook-form";
+import {
+  useForm,
+  SubmitHandler,
+  useFieldArray,
+  Resolver,
+} from "react-hook-form";
 import axios from "axios";
 import Button from "./Button";
 import { FormData } from "../types";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formSchema } from "../utils/validations";
+import { toast } from "react-toastify";
+import Image from 'next/image';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://vertex-baw2.onrender.com";
 const Form: React.FC = () => {
   const {
     register,
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormData>({
     resolver: yupResolver(formSchema) as Resolver<FormData>,
     defaultValues: {
       timelineEntries: [
-        {
-          fromMonth: "",
-          fromYear: "",
-          toMonth: "",
-          toYear: "",
-          collegeOrJob: "",
-        },
+        { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
+        // { fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" },
       ],
       sportEntries: [
         { sport: "", college: "", level: "", semester: "", year: "" },
+        // { sport: "", college: "", level: "", semester: "", year: "" },
+        // { sport: "", college: "", level: "", semester: "", year: "" },
+        // { sport: "", college: "", level: "", semester: "", year: "" },
       ],
     },
   });
@@ -43,15 +50,16 @@ const Form: React.FC = () => {
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const response = await axios.post(`${API_URL}/formData`, data);
+      const response = await axios.post("/api/formData", data);
       if (response.status === 201) {
-        alert("Form submitted successfully");
+        toast.success("Form submitted successfully");
+        reset();
       } else {
         throw new Error("Unexpected response status");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("An error occurred while submitting the form. Please try again.");
+      toast.error("An error occurred while submitting the form. Please try again.");
     }
   };
 
@@ -62,7 +70,15 @@ const Form: React.FC = () => {
     >
       <div className="card-body">
         <header className="flex justify-between items-center mb-4">
-          <div className="w-16 h-16 bg-gray-200">Logo</div>
+        <div className="w-[100px] h-[100px]">
+  <Image
+    src="/assets/logo.png"
+    alt="Company Logo"
+    width={100}
+    height={100}
+    priority
+  />
+</div>
           <h1 className="card-title">STUDENT ELIGIBILITY REPORT</h1>
           <span className="text-lg">FORM 1</span>
         </header>
@@ -96,7 +112,6 @@ const Form: React.FC = () => {
             <option value="football">Football</option>
             <option value="basketball">Basketball</option>
             <option value="soccer">Soccer</option>
-            
           </select>
           {errors.sportThisSeason && (
             <p className="text-error">{errors.sportThisSeason.message}</p>
@@ -153,6 +168,10 @@ const Form: React.FC = () => {
           {errors.studentId && (
             <p className="text-red-500">{errors.studentId.message}</p>
           )}
+          <label htmlFor="todaysDate" className="mb-2">
+          Todays Date
+          </label>
+
           <input
             type="date"
             {...register("todaysDate")}
@@ -177,6 +196,9 @@ const Form: React.FC = () => {
             placeholder="Telephone number"
             className="input input-bordered w-full"
           />
+          <label htmlFor="dateOfBirth" className="mb-2">
+            Date of Birth
+          </label>
           <input
             type="date"
             {...register("dateOfBirth")}
@@ -197,7 +219,9 @@ const Form: React.FC = () => {
           {errors.highSchool && (
             <p className="text-red-500">{errors.highSchool.message}</p>
           )}
-
+          <label htmlFor="lastDateAttended" className="mb-2">
+            Last Date Attended
+          </label>
           <input
             type="date"
             {...register("lastDateAttended")}
