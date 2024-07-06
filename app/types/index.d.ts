@@ -30,6 +30,31 @@ export interface FormData {
   }[];
 }
 
+export interface FormFieldProps {
+  register: any;
+  name: string;
+  label: string;
+  type?: string;
+  placeholder?: string;
+  options?: { value: string; label: string }[];
+  error?: string;
+}
 export interface DB {
   students: FormData[];
+}
+
+export interface TimelineEntry {
+  fromMonth: string;
+  fromYear: string;
+  toMonth: string;
+  toYear: string;
+  collegeOrJob: string;
+}
+
+export interface SportEntry {
+  sport: string;
+  college: string;
+  level: string;
+  semester: string;
+  year: string;
 }
