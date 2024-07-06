@@ -23,20 +23,38 @@ export const formSchema = yup.object().shape({
   lastDateAttended: yup.date().required("Last Date Attended is required"),
   timelineEntries: yup.array().of(
     yup.object().shape({
-      fromMonth: yup.string().required("From Month is required"),
-      fromYear: yup.string().required("From Year is required"),
-      toMonth: yup.string().required("To Month is required"),
-      toYear: yup.string().required("To Year is required"),
-      collegeOrJob: yup.string().required("College or Job is required"),
+      fromMonth: yup.string().test(
+        'all-or-none',
+        'All fields in a timeline entry must be filled',
+        function (value, context) {
+          const { fromYear, toMonth, toYear, collegeOrJob } = context.parent;
+          const isEmpty = !value && !fromYear && !toMonth && !toYear && !collegeOrJob;
+          const isComplete = value && fromYear && toMonth && toYear && collegeOrJob;
+          return isEmpty || isComplete;
+        }
+      ),
+      fromYear: yup.string(),
+      toMonth: yup.string(),
+      toYear: yup.string(),
+      collegeOrJob: yup.string(),
     })
   ),
   sportEntries: yup.array().of(
     yup.object().shape({
-      sport: yup.string().required("Sport is required"),
-      college: yup.string().required("College is required"),
-      level: yup.string().required("Level is required"),
-      semester: yup.string().required("Semester is required"),
-      year: yup.string().required("Year is required"),
+      sport: yup.string().test(
+        'all-or-none',
+        'All fields in a sport entry must be filled',
+        function (value, context) {
+          const { college, level, semester, year } = context.parent;
+          const isEmpty = !value && !college && !level && !semester && !year;
+          const isComplete = value && college && level && semester && year;
+          return isEmpty || isComplete;
+        }
+      ),
+      college: yup.string(),
+      level: yup.string(),
+      semester: yup.string(),
+      year: yup.string(),
     })
   ),
 });
