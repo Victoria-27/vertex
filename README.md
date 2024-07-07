@@ -46,3 +46,18 @@ To run the tests:
 npm test
 # or
 yarn test
+
+## Running Tests
+
+This project uses Jest and React Testing Library for unit testing. To run the tests, follow these steps:
+
+1. Make sure you have all dependencies installed:
+npm install
+
+2. Run the test command:
+npm test
+
+This will run all test files with the `.test.ts` or `.test.tsx` extension.
+
+3. To run tests in watch mode (tests will re-run automatically when files change):
+npm test -- --watch
