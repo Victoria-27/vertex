@@ -23,47 +23,49 @@ const SportEntries: React.FC<SportEntriesProps> = ({ control, register, errors }
 
       <hr className="border-t-2 border-gray-300 mb-4" />
 
-      <table className="w-full mb-4">
-        <thead>
-          <tr>
-            <th>Sport</th>
-            <th>College</th>
-            <th>Varsity/JV/Club</th>
-            <th>Semester</th>
-            <th>Yr</th>
-          </tr>
-        </thead>
-        <tbody>
-          {fields.map((field, index) => (
-            <tr key={field.id}>
-              <td>
-                <input {...register(`sportEntries.${index}.sport`)} className="border p-2 w-full" />
-                {errors.sportEntries?.[index]?.sport && <p className="text-red-500">{errors.sportEntries[index].sport.message}</p>}
-              </td>
-              <td>
-                <input {...register(`sportEntries.${index}.college`)} className="border p-2 w-full" />
-                {errors.sportEntries?.[index]?.college && <p className="text-red-500">{errors.sportEntries[index].college.message}</p>}
-              </td>
-              <td>
-                <input {...register(`sportEntries.${index}.level`)} className="border p-2 w-full" />
-                {errors.sportEntries?.[index]?.level && <p className="text-red-500">{errors.sportEntries[index].level.message}</p>}
-              </td>
-              <td>
-                <input {...register(`sportEntries.${index}.semester`)} className="border p-2 w-full" />
-                {errors.sportEntries?.[index]?.semester && <p className="text-red-500">{errors.sportEntries[index].semester.message}</p>}
-              </td>
-              <td>
-                <input {...register(`sportEntries.${index}.year`)} className="border p-2 w-full" />
-                {errors.sportEntries?.[index]?.year && <p className="text-red-500">{errors.sportEntries[index].year.message}</p>}
-              </td>
+      <div className="overflow-x-auto">
+        <table className="w-full mb-4">
+          <thead>
+            <tr>
+              <th className="px-2 py-1">Sport</th>
+              <th className="px-2 py-1">College</th>
+              <th className="px-2 py-1">Varsity/JV/Club</th>
+              <th className="px-2 py-1">Semester</th>
+              <th className="px-2 py-1">Yr</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {fields.map((field, index) => (
+              <tr key={field.id}>
+                <td className="px-2 py-1">
+                  <input {...register(`sportEntries.${index}.sport`)} className="input input-bordered input-sm md:input-md w-full" />
+                  {errors.sportEntries?.[index]?.sport && <p className="text-red-500 text-xs">{errors.sportEntries[index].sport.message}</p>}
+                </td>
+                <td className="px-2 py-1">
+                  <input {...register(`sportEntries.${index}.college`)} className="input input-bordered input-sm md:input-md w-full" />
+                  {errors.sportEntries?.[index]?.college && <p className="text-red-500 text-xs">{errors.sportEntries[index].college.message}</p>}
+                </td>
+                <td className="px-2 py-1">
+                  <input {...register(`sportEntries.${index}.level`)} className="input input-bordered input-sm md:input-md w-full" />
+                  {errors.sportEntries?.[index]?.level && <p className="text-red-500 text-xs">{errors.sportEntries[index].level.message}</p>}
+                </td>
+                <td className="px-2 py-1">
+                  <input {...register(`sportEntries.${index}.semester`)} className="input input-bordered input-sm md:input-md w-full" />
+                  {errors.sportEntries?.[index]?.semester && <p className="text-red-500 text-xs">{errors.sportEntries[index].semester.message}</p>}
+                </td>
+                <td className="px-2 py-1">
+                  <input {...register(`sportEntries.${index}.year`)} className="input input-bordered input-sm md:input-md w-full" />
+                  {errors.sportEntries?.[index]?.year && <p className="text-red-500 text-xs">{errors.sportEntries[index].year.message}</p>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <button
         type="button"
         onClick={() => append({ sport: "", college: "", level: "", semester: "", year: "" })}
-        className="bg-blue-500 text-white px-4 py-2 rounded mt-2 mb-4"
+        className="btn btn-primary btn-sm md:btn-md"
       >
         Add Sport Entry
       </button>

@@ -24,66 +24,68 @@ const TimelineEntries: React.FC<TimelineEntriesProps> = ({ control, register, er
 
       <hr className="border-t-2 border-gray-300 mb-4" />
 
-      <table className="w-full mb-4">
-        <thead>
-          <tr>
-            <th colSpan={2}>From</th>
-            <th colSpan={2}>To</th>
-            <th>Colleges Attended or Jobs Held, City, State</th>
-          </tr>
-          <tr>
-            <th>Mo</th>
-            <th>Year</th>
-            <th>Mo</th>
-            <th>Year</th>
-            <th></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {fields.map((field, index) => (
-            <tr key={field.id}>
-              <td>
-                <input {...register(`timelineEntries.${index}.fromMonth`)} className="border p-2 w-full" />
-                {errors.timelineEntries?.[index]?.fromMonth && (
-                  <p className="text-red-500">{errors.timelineEntries[index].fromMonth.message}</p>
-                )}
-              </td>
-              <td>
-                <input {...register(`timelineEntries.${index}.fromYear`)} className="border p-2 w-full" />
-                {errors.timelineEntries?.[index]?.fromYear && (
-                  <p className="text-red-500">{errors.timelineEntries[index].fromYear.message}</p>
-                )}
-              </td>
-              <td>
-                <input {...register(`timelineEntries.${index}.toMonth`)} className="border p-2 w-full" />
-                {errors.timelineEntries?.[index]?.toMonth && (
-                  <p className="text-red-500">{errors.timelineEntries[index].toMonth.message}</p>
-                )}
-              </td>
-              <td>
-                <input {...register(`timelineEntries.${index}.toYear`)} className="border p-2 w-full" />
-                {errors.timelineEntries?.[index]?.toYear && (
-                  <p className="text-red-500">{errors.timelineEntries[index].toYear.message}</p>
-                )}
-              </td>
-              <td>
-                <input {...register(`timelineEntries.${index}.collegeOrJob`)} className="border p-2 w-full" />
-                {errors.timelineEntries?.[index]?.collegeOrJob && (
-                  <p className="text-red-500">{errors.timelineEntries[index].collegeOrJob.message}</p>
-                )}
-              </td>
+      <div className="overflow-x-auto">
+        <table className="w-full mb-4">
+          <thead>
+            <tr>
+              <th colSpan={2} className="px-2 py-1 text-xs md:text-sm">From</th>
+              <th colSpan={2} className="px-2 py-1 text-xs md:text-sm">To</th>
+              <th className="px-2 py-1 text-xs md:text-sm">Colleges Attended or Jobs Held, City, State</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+            <tr>
+              <th className="px-2 py-1 text-xs md:text-sm">Mo</th>
+              <th className="px-2 py-1 text-xs md:text-sm">Year</th>
+              <th className="px-2 py-1 text-xs md:text-sm">Mo</th>
+              <th className="px-2 py-1 text-xs md:text-sm">Year</th>
+              <th className="px-2 py-1"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {fields.map((field, index) => (
+              <tr key={field.id}>
+                <td className="px-1 py-1 md:px-2">
+                  <input {...register(`timelineEntries.${index}.fromMonth`)} className="input input-bordered w-full text-xs md:text-sm" />
+                  {errors.timelineEntries?.[index]?.fromMonth && (
+                    <p className="text-red-500 text-xs">{errors.timelineEntries[index].fromMonth.message}</p>
+                  )}
+                </td>
+                <td className="px-1 py-1 md:px-2">
+                  <input {...register(`timelineEntries.${index}.fromYear`)} className="input input-bordered w-full text-xs md:text-sm" />
+                  {errors.timelineEntries?.[index]?.fromYear && (
+                    <p className="text-red-500 text-xs">{errors.timelineEntries[index].fromYear.message}</p>
+                  )}
+                </td>
+                <td className="px-1 py-1 md:px-2">
+                  <input {...register(`timelineEntries.${index}.toMonth`)} className="input input-bordered w-full text-xs md:text-sm" />
+                  {errors.timelineEntries?.[index]?.toMonth && (
+                    <p className="text-red-500 text-xs">{errors.timelineEntries[index].toMonth.message}</p>
+                  )}
+                </td>
+                <td className="px-1 py-1 md:px-2">
+                  <input {...register(`timelineEntries.${index}.toYear`)} className="input input-bordered w-full text-xs md:text-sm" />
+                  {errors.timelineEntries?.[index]?.toYear && (
+                    <p className="text-red-500 text-xs">{errors.timelineEntries[index].toYear.message}</p>
+                  )}
+                </td>
+                <td className="px-1 py-1 md:px-2">
+                  <input {...register(`timelineEntries.${index}.collegeOrJob`)} className="input input-bordered w-full text-xs md:text-sm" />
+                  {errors.timelineEntries?.[index]?.collegeOrJob && (
+                    <p className="text-red-500 text-xs">{errors.timelineEntries[index].collegeOrJob.message}</p>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <button
-        type="button"
-        onClick={() => append({ fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" })}
-        className="bg-blue-500 text-white px-4 py-2 rounded mt-2 mb-4"
-      >
-        Add Timeline Entry
-      </button>
+  type="button"
+  onClick={() => append({ fromMonth: "", fromYear: "", toMonth: "", toYear: "", collegeOrJob: "" })}
+  className="btn btn-primary btn-sm md:btn-md"
+>
+  Add Timeline Entry
+</button>
     </>
   );
 };
