@@ -53,19 +53,22 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="card w-full bg-base-100 shadow-xl">
-      <div className="card-body">
-        <FormHeader />
-        <PersonalInfo register={register} errors={errors} />
-        <TimelineEntries control={control} register={register} errors={errors} />
-        <SportEntries control={control} register={register} errors={errors} />
-        <div className="text-center">
-          <Button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
-            Submit
-          </Button>
-        </div>
-      </div>
-    </form>
+    <form onSubmit={handleSubmit(onSubmit)} className="card bg-base-100 shadow-xl">
+    <div className="card-body">
+      <FormHeader />
+      <div className="divider"></div>
+      <PersonalInfo register={register} errors={errors} />
+      <div className="divider"></div>
+      <TimelineEntries control={control} register={register} errors={errors} />
+      <div className="divider"></div>
+      <SportEntries control={control} register={register} errors={errors} />
+      <div className="card-actions justify-center">
+  <Button type="submit" className="btn btn-primary">
+    Submit
+  </Button>
+</div>
+    </div>
+  </form>
   );
 };
 

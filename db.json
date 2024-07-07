@@ -1,459 +1,74 @@
 {
   "students": [
     {
-      "timelineEntries": [
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyx"
-        },
-        {
-          "fromMonth": "jan",
-          "fromYear": "2020",
-          "toMonth": "jan",
-          "toYear": "2020",
-          "collegeOrJob": "abc"
-        }
-      ],
       "sportEntries": [
         {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
+          "sport": "",
+          "college": "",
+          "level": "",
+          "semester": "",
+          "year": ""
         },
         {
-          "sport": "football",
-          "college": "abc",
-          "level": "music",
-          "semester": "first",
-          "year": "2013"
-        }
-      ],
-      "presentCollege": "ahmadu bello university",
-      "presentConference": "pharmacognosy",
-      "sportThisSeason": "football",
-      "previousSeasons": "1",
-      "lastName": "Abioye",
-      "firstName": "Victoria",
-      "middleName": "ade",
-      "gender": "female",
-      "studentId": "123456",
-      "todaysDate": "2024-07-05",
-      "address": "Asajon way",
-      "telephone": "07039818694",
-      "dateOfBirth": "2024-07-05",
-      "highSchool": "Lagos",
-      "lastDateAttended": "2024-07-05"
-    },
-    {
-      "sportEntries": [
+          "sport": "",
+          "college": "",
+          "level": "",
+          "semester": "",
+          "year": ""
+        },
         {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
+          "sport": "",
+          "college": "",
+          "level": "",
+          "semester": "",
+          "year": ""
+        },
+        {
+          "sport": "",
+          "college": "",
+          "level": "",
+          "semester": "",
+          "year": ""
         }
       ],
       "timelineEntries": [
         {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyz"
+          "fromMonth": "",
+          "fromYear": "",
+          "toMonth": "",
+          "toYear": "",
+          "collegeOrJob": ""
+        },
+        {
+          "fromMonth": "",
+          "fromYear": "",
+          "toMonth": "",
+          "toYear": "",
+          "collegeOrJob": ""
+        },
+        {
+          "fromMonth": "",
+          "fromYear": "",
+          "toMonth": "",
+          "toYear": "",
+          "collegeOrJob": ""
+        },
+        {
+          "fromMonth": "",
+          "fromYear": "",
+          "toMonth": "",
+          "toYear": "",
+          "collegeOrJob": ""
         }
       ],
-      "lastDateAttended": "2024-07-05T23:00:00.000Z",
+      "lastDateAttended": "2014-05-04T23:00:00.000Z",
       "highSchool": "Lagos",
-      "dateOfBirth": "2024-07-05T23:00:00.000Z",
+      "dateOfBirth": "1985-05-09T23:00:00.000Z",
       "telephone": "07039818694",
       "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "female",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "basketball",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyx"
-        }
-      ],
-      "lastDateAttended": "2024-07-05T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2024-07-05T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "female",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "football",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "first",
-          "year": "2012"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "first",
-          "year": "2012"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "first",
-          "year": "2012"
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyx"
-        },
-        {
-          "fromMonth": "jan",
-          "fromYear": "2020",
-          "toMonth": "may",
-          "toYear": "2013",
-          "collegeOrJob": "acv"
-        },
-        {
-          "fromMonth": "jan",
-          "fromYear": "2020",
-          "toMonth": "may",
-          "toYear": "2013",
-          "collegeOrJob": "abc"
-        },
-        {
-          "fromMonth": "jan",
-          "fromYear": "2020",
-          "toMonth": "may",
-          "toYear": "2013",
-          "collegeOrJob": "vgb"
-        }
-      ],
-      "lastDateAttended": "2024-07-05T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "1990-12-29T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
+      "todaysDate": "2024-07-06T23:00:00.000Z",
       "studentId": "123456",
       "gender": "male",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "basketball",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "second",
-          "year": "2014"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "second",
-          "year": "2014"
-        },
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "music",
-          "semester": "second",
-          "year": "2014"
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyx"
-        },
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "ytd"
-        },
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "ada"
-        },
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "sad"
-        }
-      ],
-      "lastDateAttended": "2024-07-05T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "1991-06-03T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "female",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "football",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "soccer",
-          "college": "xyz",
-          "level": "jet",
-          "semester": "second",
-          "year": "2014"
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "feb",
-          "fromYear": "2021",
-          "toMonth": "feb",
-          "toYear": "2024",
-          "collegeOrJob": "xyx"
-        }
-      ],
-      "lastDateAttended": "2024-07-05T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-01-09T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "female",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "football",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        }
-      ],
-      "lastDateAttended": "2019-06-03T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-02-05T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "male",
-      "middleName": "ade",
-      "firstName": "Victoria",
-      "lastName": "Abioye",
-      "previousSeasons": "0",
-      "sportThisSeason": "football",
-      "presentConference": "pharmacognosy",
-      "presentCollege": "ahmadu bello university"
-    },
-    {
-      "sportEntries": [
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        },
-        {
-          "sport": "",
-          "college": "",
-          "level": "",
-          "semester": "",
-          "year": ""
-        }
-      ],
-      "timelineEntries": [
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        },
-        {
-          "fromMonth": "",
-          "fromYear": "",
-          "toMonth": "",
-          "toYear": "",
-          "collegeOrJob": ""
-        }
-      ],
-      "lastDateAttended": "2019-06-05T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "1995-06-14T23:00:00.000Z",
-      "telephone": "07039818694",
-      "address": "Asajon way",
-      "todaysDate": "2024-07-05T23:00:00.000Z",
-      "studentId": "123456",
-      "gender": "female",
       "middleName": "ade",
       "firstName": "Victoria",
       "lastName": "Abioye",
